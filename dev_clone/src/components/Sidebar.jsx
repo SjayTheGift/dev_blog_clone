@@ -46,7 +46,7 @@ const Sidebar = ({nav, setNav}) => {
 
   return (
     <>
-    <div className={`fixed top-0 w-[300px] z-[11]  ${nav ? 'left-0 opacity-100 overflow-y-auto h-screen bg-[#f5f5f5]': 'left-[-1000%] opacity-0'} md:opacity-100 md:static`}> 
+    <div className={`fixed top-0 z-[11]  ${nav ? 'left-0 opacity-100 overflow-y-auto h-screen w-[300px] bg-[#f5f5f5]': 'left-[-1000%] opacity-0'} md:opacity-100 md:static`}> 
         <div className='block md:hidden'>
             <div className='flex justify-between px-5 py-4 items-center'>
                 <p className='font-bold'>Dev Community</p>
