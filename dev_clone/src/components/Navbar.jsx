@@ -24,7 +24,7 @@ const Navbar = ({nav, setNav}) => {
             <div className='flex gap-4 items-center flex-auto'>
                 <div className=''>
                     <a>
-                        <img src={dev_logo} width='55px'  className='w-[45px] sm:w-[55px] cursor-pointer' />
+                        <img src={dev_logo} width='43px'  className='w-[43px] cursor-pointer' />
                     </a>
                 </div>
             
