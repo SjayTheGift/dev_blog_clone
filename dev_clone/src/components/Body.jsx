@@ -1,11 +1,22 @@
-import React from 'react'
+import {useState,useEffect} from 'react'
 import Sidebar from './Sidebar'
 import RightSideBar from './RightSideBar'
 import BodyCard from './BodyCard'
 import BodyNavigation from './BodyNavigation'
 import BlogCard from './BlogCard'
 
+import { PostService } from '../service/PostService'
+
 const Body = ({nav, setNav}) => {
+
+  const [posts, setPosts] = useState([])
+
+  useEffect(() =>{
+    setPosts(PostService.getPostsData())
+  },[])
+
+  console.log(posts)
+
   return (
     <>
     <section className='py-[90px] max-h-screen w-full px-8 md:px-0 xl:w-[80%] mx-auto relative'>
@@ -17,7 +28,12 @@ const Body = ({nav, setNav}) => {
             <div className="col-span-4 w-full">
             <BodyNavigation />
              <BodyCard />
-             <BlogCard />
+             {posts.map((post) => 
+             <div className='' key={post.id}>
+                <BlogCard post={post} />
+             </div>
+             )}
+             
             </div>
             <div className="col-span-2  hidden lg:block">
                 <RightSideBar />
