@@ -15,8 +15,6 @@ const Body = ({nav, setNav}) => {
     setPosts(PostService.getPostsData())
   },[])
 
-  console.log(posts)
-
   return (
     <>
     <section className='py-[90px] max-h-screen w-full px-8 md:px-0 xl:w-[80%] mx-auto relative'>
