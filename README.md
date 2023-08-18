@@ -13,7 +13,9 @@ Login Screen
 
 To clone a run locally
 
+```bash
 git clone https://github.com/SjayTheGift/dev_blog_clone
+```
 ```bash
 cd dev_clone
 ```
