@@ -10,11 +10,18 @@ Login Screen
 ![picture alt](https://github.com/SjayTheGift/dev_blog_clone/blob/master/dev_clone/public/screenshot/Dev_clone_landing_Page.png "Landing Page")
 
 ## Quickstart
+
+To clone a run locally
+
 git clone https://github.com/SjayTheGift/dev_blog_clone
+```bash
 cd dev_clone
-
+```
 # install the dependencies
+```bash
 npm install
-
+```
 # start the server
+```bash
 npm run dev
+```
