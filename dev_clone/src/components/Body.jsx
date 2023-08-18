@@ -20,7 +20,7 @@ const Body = ({nav, setNav}) => {
   return (
     <>
     <section className='py-[90px] max-h-screen w-full px-8 md:px-0 xl:w-[80%] mx-auto relative'>
-        <div className="grid sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-8 gap-4 sm:px-5">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 gap-4 sm:px-5">
             <div className="md:col-span-2 max-h-screen w-full">
                 <Sidebar nav={nav} setNav={setNav}/>
             </div>

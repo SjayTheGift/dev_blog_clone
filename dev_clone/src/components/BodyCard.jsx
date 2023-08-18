@@ -9,7 +9,7 @@ const BodyCard = () => {
     const [toggleBox, setToggleBox] = useState(false)
 
   return (
-        <div className='shadow-sm border rounded-md px-5 py-4 md:relative z-[1] bg-white'>
+        <div className='shadow-sm border rounded-md px-5 py-4 md:relative z-[1] bg-white w-full'>
             <div className='flex justify-between items-center'>
                 <p>Dev Community</p>
                 <SlOptions className='cursor-pointer'  size={15} onClick={() => setToggleBox(!toggleBox)}/>
@@ -30,7 +30,7 @@ const BodyCard = () => {
             </div>
 
             <div className='mt-2'>
-                <img src={card_img} />
+                <img src={card_img} className='object-scale-down'/>
                 <p className='font-bold text-xl my-4'>Need to stay up-to-date with the most relevant trends in software, such as AI, cloud computing, and all things frontend?</p>
                 <p className='my4'>Look no further.</p>
                 <p className='my-4'>You can do so much more once you <span className='font-bold'>create your account.</span> Follow the devs and topics you care about, and keep up-to-date.</p>

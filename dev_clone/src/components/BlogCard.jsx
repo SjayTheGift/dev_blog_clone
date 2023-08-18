@@ -10,8 +10,6 @@ import {
     SparkleHeartIcon } 
 from '../icons/reactions'
 
-import user from '../assets/users_img/user_1.webp'
-
 const BlogCard = ({post}) => {
   return (
     <div className='mt-5 shadow-sm border rounded-md px-5 py-4 md:relative z-[1] bg-white'>
