@@ -23,7 +23,7 @@ const BlogCard = ({post}) => {
         <div className='mt-4 mb-1 sm:ml-11 cursor-pointer'>
             <h3 className='text2xl font-bold hover:text-[#4350e0]'>{post.title}</h3>
         </div>
-        <ul className='flex gap-5 sm:ml-10 mb-2'>
+        <ul className='flex flex-wrap gap-2 sm:gap-5 sm:ml-10 sm:mb-2'>
             {post.tags.map((tag, index) => 
                 <div key={index}>
                     <a className={`cursor-pointer px-1 py-1 ${tag.bgColor} rounded-md border border-white ${tag.borderColor} flex`} >
